@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pd_fred',
-    version='0.1.0',
+    version='0.1.1',
     author='Your Name',
     author_email='your.email@example.com',
     description='Python package to calculate Probability of Default using FRED data.',
