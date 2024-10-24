@@ -1,0 +1,7 @@
+modules = ["bash"]
+run = "Initial commit of pd_fred package"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "Initial commit of pd_fred package"]
