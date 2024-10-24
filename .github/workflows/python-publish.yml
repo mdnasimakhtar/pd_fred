@@ -3,7 +3,7 @@ name: Publish Python Package
 on:
   push:
     branches:
-      - main  # Adjust to the branch you want to trigger the workflow
+      - main  # This should be the branch that triggers the workflow
 
 jobs:
   publish:
@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
-        python-version: 3.x  # Replace with the version you are using, e.g., "3.9"
+        python-version: 3.x  # Replace with your Python version, e.g., "3.9"
 
     - name: Install dependencies
       run: |
@@ -27,6 +27,7 @@ jobs:
     - name: Build the package
       run: |
         python setup.py sdist bdist_wheel
+      working-directory: .  # Ensures the build command runs in the root directory
 
     - name: Publish to PyPI
       env:
@@ -34,3 +35,4 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
       run: |
         twine upload dist/*
+      working-directory: .  # Ensures the upload command runs in the root directory
