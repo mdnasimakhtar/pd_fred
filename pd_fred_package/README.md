@@ -1,9 +1,9 @@
 # pd_fred
-A Python package for calculating the Probability of Default (PD) using FRED data.
+A Python package for calculating the Probability of Default (PD) using Federal Reserve data. 
+The package is available on PyPI.
 # author
 Md Nasim Akhtar
-# installer available on 
-PyPI
+
 
 ## Installation
 ```bash
