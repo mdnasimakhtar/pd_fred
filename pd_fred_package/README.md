@@ -1,6 +1,9 @@
 # pd_fred
-
 A Python package for calculating the Probability of Default (PD) using FRED data.
+# author
+Md Nasim Akhtar
+# installer available on 
+PyPI
 
 ## Installation
 ```bash
